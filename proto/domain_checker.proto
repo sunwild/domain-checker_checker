@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package checker;
+
+option go_package = "checker/proto";
+
+service DomainChecker {
+  rpc CheckDomains (DomainRequest) returns (DomainResponse);
+}
+
+message DomainRequest {
+  repeated string domains = 1;
+  bool isManual = 2;
+}
+
+message DomainResponse {
+  repeated DomainStatus statuses = 1;
+}
+
+message DomainStatus {
+  string domain = 1;
+  int32 http_status = 2;
+  string ssl_status = 3;
+  string dns_status = 4;
+  string virus_total_status = 5;
+}
