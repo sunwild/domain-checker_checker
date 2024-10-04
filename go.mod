@@ -1,4 +1,4 @@
-module github.com/sunwild/checker
+module github.com/sunwild/domain_checker
 
 go 1.23.1
 
@@ -16,5 +16,3 @@ require (
 	golang.org/x/text v0.18.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20240930140551-af27646dc61f // indirect
 )
-
-replace github.com/sunwild/api => ../api

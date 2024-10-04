@@ -2,9 +2,9 @@ package grpcchecker
 
 import (
 	"context"
-	pkgApiD "github.com/sunwild/api/pkg/domains"
-	"github.com/sunwild/checker/internal/service"
-	pb "github.com/sunwild/checker/proto/checker/proto"
+	//pkgApiD "github.com/sunwild/api/pkg/domains"
+	"github.com/sunwild/domain-checker_checker/internal/service"
+	pb "github.com/sunwild/domain-checker_checker/proto/checker/proto"
 	"log"
 	"strings"
 	"sync"
