@@ -3,10 +3,10 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	//pkgApiD "github.com/sunwild/api/pkg/domains"
-	"github.com/sunwild/domain-checker_checker/internal/grpcchecker" // Импортируем наш gRPC сервер
+	pkgApiD "github.com/sunwild/domain-checker_api/pkg/domains"
 	"github.com/sunwild/domain-checker_checker/internal/service"
 	pb "github.com/sunwild/domain-checker_checker/proto/checker/proto"
+	"github.com/sunwild/domain_checker/internal/grpcchecker"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 	"log"

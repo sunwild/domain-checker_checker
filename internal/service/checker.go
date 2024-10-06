@@ -4,7 +4,7 @@ import (
 	"crypto/tls"
 	"encoding/json"
 	"fmt"
-	//pkgApiD "github.com/sunwild/api/pkg/domains"
+	pkgApiD "github.com/sunwild/domain-checker_api/pkg/domains"
 	database "github.com/sunwild/domain-checker_checker/internal/datebase"
 	"log"
 	"net"
